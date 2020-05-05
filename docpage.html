@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @media only Screen{
+                #nav-bar{
+                position:fixed;
+                text-align: justify;
+            }
+            }
+            main{
+                display:grid;
+                grid-template-columns: 1fr 3fr 1fr;
+            }
+            body{
+                background-color: aqua;
+            }
+            section{
+                grid-column: 2/3;
+                border-color: black;
+                background-color: aquamarine;
+                border-style: dotted;
+                border-width: 5px;
+                padding: auto;
+                margin-top:20px;
+            }
+            nav{
+                background-color: bisque;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <nav id="nav-bar">
+            <header>Here are some programming languages I've used before</header>
+
+                <a class="nav-link" href="#html">HTML</a>
+                <a class="nav-link" href="#css">CSS</a>
+                <a class="nav-link" href="#javascript">Javascript</a>
+                <a class="nav-link" href="#python">Python</a>
+                <a class="nav-link" href="#java">Java</a>
+
+        </nav>
+
+
+        <main id="main-doc">
+            <section id="html" class="main-section">
+                <header>HTML</header>
+                <p>This is a markup language which sets the skeleton for a webpage.</p>
+                <code><!--This is how you comment in html--></code>
+            </section>
+            
+            <section id="css" class="main-section">
+                <header >CSS</header>
+                <p>This is a style sheet language which gives display information to html elements.</p>
+                <code>/*This is how you comment in javascript*/</code>
+            </section>
+            
+            <section id="javascript" class="main-section">
+                <header >Javascript</header>
+                <p>This is a dynamic language which provides functionalities to a webpage.</p>
+                <code>//This is how you comment in javascript.</code>
+            </section>
+            </section>
+            
+            <section id="python" class="main-section">
+                <header >Python</header>
+                <p>This is another dynamic language..</p>
+                <code>#This is how you comment in python</code>
+                <p>Python is known for:</p>
+                <ul>
+                    <li>Ease of use</li>
+                    <li>Powerful libraries</li>
+                </ul>
+            </section>
+            </section>
+            
+            <section id="java" class="main-section">
+                <header >Java</header>
+                <p>This is a third dynamic language.</p>
+                <code>/*This is how you comment in java (too)*/</code>
+                <p>Java is known for:</p>
+                <ul>
+                    <li>Speed</li>
+                    <li>Cool name</li>
+                    <li>Wide use</li>
+                </ul>
+            </section>
+            </section>
+
+        </main>
+    </body>
+
+
+</html>
+
+
