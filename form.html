@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                text-align:center;
+            }
+            body{
+                background-color: red;
+            }
+            #description{
+                font-size: 14px;
+                text-align:center;
+            }
+            form{
+                background-color: beige;
+                margin: 0 auto;
+                width: 25%;
+            }
+            #scoring-type{
+                text-align: center;
+            }
+            #player-types{
+                text-align:center;
+            }
+            #league-id{
+                text-align:center;
+            }
+            #submit-button{
+                text-align:center;
+            }
+            #team-id{
+                text-align:center;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1 id="title">Win-Win Trade Calculator</h1>
+        <p id="description">To get something, you gotta give something. This trade calculator finds mutually beneficial trades whereby you can convert points sitting on your bench into points sitting in your lineup.</p>
+
+        <form id="survey-form" action="google.com">
+            <div id=scoring-type>
+                <select id="dropdown" name="scoring-type-dropdown">
+                    <option value="PPR">PPR</option>
+                    <option value="Half PPR">Half PPR</option>
+                    <option value="Standard">Standard</option>
+                </select>
+            </div>
+            
+            <div id="player-types">
+                <label for="QB">QB</label>
+                <input type=checkbox checked id = "QB" value="QB" name="included-player-types">
+                <label for="RB">RB</label>
+                <input type=checkbox checked id = "RB" value="RB" name="included-player-types">
+                <label for="WR">WR</label>
+                <input type=checkbox checked id = "WR" value="WR" name="included-player-types">
+                <label for="TE">TE</label>
+                <input type=checkbox checked id = "TE" value="TE" name="included-player-types">
+                <label for="K">K</label>
+                <input type=checkbox id = "K" value="K" name="included-player-types">
+                <label for="D/ST">D/ST</label>
+                <input type=checkbox id = "D/ST" value="D/ST" name="included-player-types">
+            </div>
+
+            
+            <div id="league-id">
+                <input type=number id="league-id" placeholder="Your league id">
+            </div>
+
+            <div id="team-id">
+                <input type=number id="team-id" placeholder="Your team id">
+            </div>
+
+            <div id="submit-button">
+                <button id="submit" type=submit>Submit</button>
+            </div>
+
+
+
+        </form>
+    </body>
+
+
+
+
+</html>
+
+
+
+
